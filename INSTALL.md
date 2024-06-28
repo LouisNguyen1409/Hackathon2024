@@ -1,11 +1,14 @@
+## Front-end
+
 **cd fe**
+
 **cd front-end**
+
 **npm i**
+
 **npm run dev**
 
-
-**cd ..**
-**cd ..**
+## Back-end
 **cd be**
 **npm i**
 **npm run dev**
