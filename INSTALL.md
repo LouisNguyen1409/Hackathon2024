@@ -9,6 +9,9 @@
 **npm run dev**
 
 ## Back-end
+
 **cd be**
+
 **npm i**
+
 **npm run dev**
