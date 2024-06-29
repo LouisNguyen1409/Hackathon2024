@@ -1,7 +1,7 @@
-
+import Login from "./Component/Login";
 function App() {
 
-  return <></>;
+  return <><Login/></>;
 }
 
 export default App;
