@@ -39,7 +39,6 @@ const LoginButton = ({ className = "" }) => {
           height: "36px",
           flex: "1",
           position: "relative",
-          fontWeight: "500",
           display: "inline-block",
           zIndex: "1",
           color: "black",
