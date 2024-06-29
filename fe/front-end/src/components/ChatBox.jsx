@@ -1,8 +1,12 @@
 import React from 'react'
-
+import ChatBoxInput from './ChatBoxInput'
+// import SetupProgress from './RegisterProgress/SetupProgress';
 const ChatBox = () => {
 	return (
-		<div>ChatBox</div>
+		<div>
+      		<ChatBoxInput />
+		</div>
+
 	)
 }
 
