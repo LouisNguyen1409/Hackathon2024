@@ -1,9 +1,10 @@
-import GoalSelection from '../components/GoalSelection';
-import SetupProgress from '../components/SetupProgress';
+import { Box } from '@mui/material';
+import GenderIcons from './GenderIcons';
+import SetupProgress from './SetupProgress';
 
-const SetGoal = () => {
+const SetupGender = () => {
   return (
-    <div
+    <Box
       style={{
         width: '100%',
         position: 'relative',
@@ -15,14 +16,14 @@ const SetGoal = () => {
         justifyContent: 'flex-start',
         padding: '43px 60px 73px',
         boxSizing: 'border-box',
-        gap: '60px',
+        gap: '116px',
         lineHeight: 'normal',
         letterSpacing: 'normal',
       }}>
-      <SetupProgress />
+      <SetupProgress pre_page='setup' page='setup' page_num_str='4' />
       <section
         style={{
-          width: '1255px',
+          alignSelf: 'stretch',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'flex-start',
@@ -33,30 +34,29 @@ const SetGoal = () => {
           color: '#fff',
           fontFamily: 'Syne',
         }}>
-        <div
+        <Box
           style={{
-            width: '715px',
+            width: '874px',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'flex-start',
+            alignItems: 'flex-end',
             justifyContent: 'flex-start',
-            gap: '37px',
+            gap: '126px',
             maxWidth: '100%',
           }}>
-          <div
+          <Box
             style={{
               alignSelf: 'stretch',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-start',
               justifyContent: 'flex-start',
-              gap: '12px',
+              gap: '33px',
               maxWidth: '100%',
             }}>
             <h1
               style={{
                 margin: '0',
-                width: '589px',
                 position: 'relative',
                 fontSize: 'inherit',
                 fontWeight: '700',
@@ -64,26 +64,27 @@ const SetGoal = () => {
                 display: 'inline-block',
                 maxWidth: '100%',
               }}>
-              <span>{`Tell us: what’s your `}</span>
-              <span style={{ color: '#ffcc01' }}>goal?</span>
+              <span>{`What’s your `}</span>
+              <span style={{ color: '#ffcc01' }}>sex?</span>
             </h1>
-            <div
+            <Box
               style={{
                 alignSelf: 'stretch',
-                position: 'relative',
-                fontSize: '21px',
-                fontWeight: '600',
-                fontFamily: 'Inter',
-                color: '#5f5f5f',
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                maxWidth: '100%',
+                gap: '20px',
               }}>
-              Select up to 3 goals that are your top priorities, so we can create a personalised workout plan for you and you only.
-            </div>
-          </div>
-          <GoalSelection />
-        </div>
+              <GenderIcons ionMaleOutline1='/ionmaleoutline-1.svg' male='Male' page_num_str='5' />
+              <GenderIcons ionMaleOutline1='/ionfemaleoutline-1.svg' male='Female' page_num_str='5' />
+            </Box>
+          </Box>
+        </Box>
       </section>
-    </div>
+    </Box>
   );
 };
 
-export default SetGoal;
+export default SetupGender;

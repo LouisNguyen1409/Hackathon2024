@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Box, Button } from '@mui/material';
 import LinearProgress from '@mui/material/LinearProgress';
 import { styled } from '@mui/material/styles';
 import { linearProgressClasses } from '@mui/material/LinearProgress';
+import { useNavigate } from 'react-router-dom';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
@@ -16,7 +18,9 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }));
 
-const SetupProgress = ({ className = '' }) => {
+const SetupProgress = ({ className = '', page, page_num_str, pre_page }) => {
+  const navigate = useNavigate();
+  let page_num = parseInt(page_num_str);
   return (
     <header
       style={{
@@ -33,20 +37,29 @@ const SetupProgress = ({ className = '' }) => {
         fontFamily: 'Inter',
       }}
       className={className}>
-      <Button>
-        <img
+      {page_num !== 0 ? (
+        <Button onClick={() => navigate(`/${pre_page}/${page_num - 1}`)}>
+          <img
+            style={{
+              height: '63px',
+              width: '63px',
+              position: 'relative',
+              overflow: 'hidden',
+              flexShrink: '0',
+            }}
+            src='/arrow-leftcircle.svg'
+          />
+        </Button>
+      ) : (
+        <div
           style={{
             height: '63px',
             width: '63px',
             position: 'relative',
             overflow: 'hidden',
             flexShrink: '0',
-          }}
-          loading='lazy'
-          alt=''
-          src='/arrow-leftcircle.svg'
-        />
-      </Button>
+          }}></div>
+      )}
       <Box
         style={{
           width: '1008px',
@@ -69,7 +82,7 @@ const SetupProgress = ({ className = '' }) => {
             maxWidth: '100%',
           }}>
           <Box sx={{ width: '100%' }}>
-            <BorderLinearProgress variant='determinate' value={50} />
+            <BorderLinearProgress variant='determinate' value={(page_num / 6) * 100} />
           </Box>
         </Box>
         <Box
@@ -87,6 +100,7 @@ const SetupProgress = ({ className = '' }) => {
           <label style={{ cursor: 'pointer' }}>
             <b style={{ marginLeft: '6%', flex: '1', position: 'relative', whiteSpace: 'nowrap' }}>Skip for now</b>
             <Button
+              onClick={() => navigate(`/${page}/${page_num + 1}`)}
               style={{
                 height: '100%',
                 width: '100%',
@@ -103,7 +117,7 @@ const SetupProgress = ({ className = '' }) => {
               }}
             />
           </label>
-          <input style={{ display: 'none' }} type='file' id='file-3:40' />
+          <input style={{ display: 'none' }} type='file' />
         </Box>
       </Box>
     </header>
