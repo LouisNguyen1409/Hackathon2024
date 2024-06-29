@@ -3,7 +3,12 @@ import ChatBoxInput from './ChatBoxInput'
 // import SetupProgress from './RegisterProgress/SetupProgress';
 const ChatBox = () => {
 	return (
-		<div>
+		<div style={{
+			width: '100%',
+			height: '100%',
+			overflow: 'hidden',
+
+		  }}>
       		<ChatBoxInput />
 		</div>
 

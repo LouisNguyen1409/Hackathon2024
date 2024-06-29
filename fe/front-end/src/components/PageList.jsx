@@ -1,15 +1,3 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
-import Recomendation from "./Recomendation";
-import ChatBox from "./ChatBox";
-import Setup from "./Setup";
-import SetGoal from "./SetGoal";
-import SetAge from "./SetAge";
-import SetupHeight from "./SetupHeight"
-import SetupGender from "./SetupGender";
 import FitnessDashboard from './FitnessDashboard';
 /* eslint-disable no-unused-vars */
 import React from 'react';
