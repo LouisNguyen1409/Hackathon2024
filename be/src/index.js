@@ -4,7 +4,7 @@ import cors from 'cors';
 import errorHandler from 'middleware-http-errors';
 
 const app = express();
-const port = 3000;
+const port = 3003;
 
 app.use(json());
 app.use(cors());
