@@ -141,26 +141,15 @@ const MainContent = () => {
       >
         00:14
       </Typography>
-      <Box
-        style={{
-          width: "85%",
-          height: "70%",
-          backgroundColor: "#666",
-          borderRadius: 10,
-        }}
-      />
-      <Box
-        className="rr"
-        style={{
-          width: "85%",
-          marginTop: "10px",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <PauseButton />
-        <Progress />
-      </Box>
+        <video
+          width="100%"
+          height="100%"
+          controls
+          style={{ borderRadius: 10 }}
+        >
+          <source src="/final1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
     </Box>
   );
 };
