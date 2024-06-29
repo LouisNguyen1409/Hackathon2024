@@ -6,6 +6,7 @@ import Register from "./Register";
 import Recomendation from "./Recomendation";
 import ChatBox from "./ChatBox";
 import Setup from "./Setup";
+import SetGoal from "./SetGoal";
 
 const PageList = () => {
   return (
@@ -17,6 +18,7 @@ const PageList = () => {
         <Route path="/recomendation" element={<Recomendation />} />
         <Route path="/chatbox" element={<ChatBox />} />
         <Route path="/setup" element={<Setup />} />
+        <Route path="/setup/1" element={<SetGoal />} />
       </Routes>
     </>
   );
