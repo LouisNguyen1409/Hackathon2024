@@ -9,7 +9,7 @@ const FrameComponent = ({ className = "" }) => {
         flexDirection: "column",
         alignItems: "flex-end",
         justifyContent: "flex-start",
-        gap: "60px",
+        gap: "53px",
         minWidth: "430px",
         maxWidth: "100%",
         textAlign: "right",

@@ -316,12 +316,7 @@ const ProgressTop = ({ className = "" }) => {
                     <b>
                       <span>1,503</span>
                     </b>
-                    <span
-                      style={{
-                        fontSize: "21px",
-                        color: "#6e6e6e",
-                      }}
-                    >
+                    <span style={{ fontSize: "21px", color: "#6e6e6e" }}>
                       <b>{` `}</b>
                       <span style={{ fontWeight: "500" }}>
                         Calories remaining

@@ -9,14 +9,14 @@ const DashBoard = () => {
     <div
       style={{
         width: "100%",
-        height: "100vh",
+        height: "1024px",
         position: "relative",
         backgroundColor: "#232323",
         overflow: "hidden",
         lineHeight: "normal",
         letterSpacing: "normal",
         textAlign: "center",
-        fontSize: "6vw", // Use vw for font size to make it responsive
+        fontSize: "98px",
         color: "#ffcc01",
         fontFamily: "Syne",
       }}
@@ -24,39 +24,39 @@ const DashBoard = () => {
       <div
         style={{
           position: "absolute",
-          top: "26.4vh", // Use vh for top positioning
-          left: "54.35vw", // Use vw for left positioning
+          top: "264px",
+          left: "1087px",
           borderRadius: "48px",
           border: "3px solid #fff",
           boxSizing: "border-box",
-          width: "31.85vw", // Use vw for width
-          height: "9.6vh", // Use vh for height
+          width: "637px",
+          height: "96px",
           display: "none",
         }}
       />
       <div
         style={{
           position: "absolute",
-          top: "41.3vh", // Use vh for top positioning
-          left: "54.35vw", // Use vw for left positioning
+          top: "413px",
+          left: "1087px",
           borderRadius: "48px",
           border: "3px solid #fff",
           boxSizing: "border-box",
-          width: "31.85vw", // Use vw for width
-          height: "9.6vh", // Use vh for height
+          width: "637px",
+          height: "96px",
           display: "none",
         }}
       />
       <div
         style={{
           position: "absolute",
-          top: "56.2vh", // Use vh for top positioning
-          left: "54.35vw", // Use vw for left positioning
+          top: "562px",
+          left: "1087px",
           borderRadius: "48px",
           border: "3px solid #fff",
           boxSizing: "border-box",
-          width: "31.85vw", // Use vw for width
-          height: "9.6vh", // Use vh for height
+          width: "637px",
+          height: "96px",
           display: "none",
         }}
       />
@@ -64,8 +64,8 @@ const DashBoard = () => {
         style={{
           margin: "0",
           position: "absolute",
-          top: "26.8vh", // Use vh for top positioning
-          left: "5.9vw", // Use vw for left positioning
+          top: "268px",
+          left: "59px",
           fontSize: "inherit",
           fontWeight: "800",
           fontFamily: "inherit",
@@ -80,14 +80,14 @@ const DashBoard = () => {
       <div
         style={{
           position: "absolute",
-          top: "23.6vh", // Use vh for top positioning
-          left: "6vw", // Use vw for left positioning
-          width: "88vw", // Use vw for width
+          top: "236px",
+          left: "60px",
+          width: "1380px",
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-end",
           justifyContent: "flex-start",
-          gap: "18.8vw", // Use vw for gap
+          gap: "188px",
           maxWidth: "100%",
         }}
       >
@@ -98,7 +98,7 @@ const DashBoard = () => {
             flexDirection: "column",
             alignItems: "flex-start",
             justifyContent: "flex-end",
-            padding: "0px 0px 1.1vh", // Use vh for padding
+            padding: "0px 0px 11px",
             boxSizing: "border-box",
             maxWidth: "100%",
           }}
@@ -120,9 +120,9 @@ const DashBoard = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "-27.7vw", // Use vw for left positioning
-            width: "188.1vw", // Use vw for width
-            height: "111.4vh", // Use vh for height
+            left: "-277px",
+            width: "1881px",
+            height: "1114px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -146,7 +146,7 @@ const DashBoard = () => {
           style={{
             position: "absolute",
             top: "896px",
-            left: "600px",
+            left: "409px",
             borderRadius: "3px",
             width: "55px",
             height: "55px",
@@ -159,10 +159,10 @@ const DashBoard = () => {
         <img
           style={{
             position: "absolute",
-            top: "6.9vh", // Use vh for top positioning
-            left: "121.4vw", // Use vw for left positioning
-            width: "16.6vw", // Use vw for width
-            height: "0.9vh", // Use vh for height
+            top: "69px",
+            left: "1214px",
+            width: "166px",
+            height: "9px",
             zIndex: "1",
           }}
           loading="lazy"
@@ -173,7 +173,7 @@ const DashBoard = () => {
           style={{
             position: "absolute",
             top: "255px",
-            left: "760px",
+            left: "594px",
             width: "96px",
             height: "96px",
             overflow: "hidden",
