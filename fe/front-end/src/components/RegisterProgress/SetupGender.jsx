@@ -3,6 +3,9 @@ import GenderIcons from './GenderIcons';
 import SetupProgress from './SetupProgress';
 
 const SetupGender = () => {
+  const handleGenderClick = (gender) => {
+    localStorage.setItem('gender', gender);
+  };
   return (
     <Box
       style={{
