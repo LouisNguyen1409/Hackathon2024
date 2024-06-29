@@ -1,15 +1,15 @@
-import Login from "./Component/Login";
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
+import PageList from './components/PageList';
+
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "row",
-      }}
-    >
-      <Login />
-    </div>
+    <>
+      <Router>
+        <PageList />
+      </Router>
+      {/* <h1>Hello</h1> */}
+    </>
   );
 }
 
