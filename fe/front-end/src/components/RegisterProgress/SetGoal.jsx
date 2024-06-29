@@ -1,7 +1,9 @@
-import GoalSelection from '../components/GoalSelection';
-import SetupProgress from '../components/SetupProgress';
+import GoalSelection from './GoalSelection';
+import SetupProgress from './SetupProgress';
+
 
 const SetGoal = () => {
+
   return (
     <div
       style={{
@@ -19,7 +21,7 @@ const SetGoal = () => {
         lineHeight: 'normal',
         letterSpacing: 'normal',
       }}>
-      <SetupProgress />
+      <SetupProgress pre_page='setup' page='setup' page_num_str='1' />
       <section
         style={{
           width: '1255px',

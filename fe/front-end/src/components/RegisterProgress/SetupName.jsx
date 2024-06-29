@@ -1,8 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { Box } from '@mui/material';
-import NextButton from './NextButton';
+import NextButton from '../NextButton';
+import React from 'react';
 
 // eslint-disable-next-line react/prop-types
 const SetupName = ({ className = '' }) => {
+  const [name, setName] = React.useState('');
   return (
     <section
       style={{
@@ -25,7 +28,7 @@ const SetupName = ({ className = '' }) => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'flex-start',
-          gap: '125px',
+          gap: '75px',
           maxWidth: '100%',
         }}>
         <Box
@@ -69,7 +72,7 @@ const SetupName = ({ className = '' }) => {
             }}>
             <input
               style={{
-                height: '200%',
+                height: '300%',
                 color: '#FFFFFF',
                 width: '100%',
                 position: 'absolute',
@@ -91,10 +94,11 @@ const SetupName = ({ className = '' }) => {
               }}
               placeholder='Name...'
               label='Name...'
+              onChange={(e) => setName(e.target.value)}
             />
           </Box>
         </Box>
-        <NextButton />
+        <NextButton page_num_str='1' />
       </Box>
     </section>
   );

@@ -1,30 +1,33 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
-import Recomendation from "./Recomendation";
-import ChatBox from "./ChatBox";
-import Setup from "./Setup";
-import SetGoal from "./SetGoal";
-import SetAge from "./SetAge";
-import SetupHeight from "./SetupHeight"
-import SetupGender from "./SetupGender";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './HomePage/Home';
+import Login from './LoginPage/Login';
+import Register from './RegisterPage/Register';
+import Recomendation from './Recomendation';
+import ChatBox from './ChatBox';
+import Setup from './RegisterProgress/Setup';
+import SetGoal from './RegisterProgress/SetGoal';
+import SetAge from './RegisterProgress/SetAge';
+import SetupHeight from './RegisterProgress/SetupHeight';
+import SetupGender from './SetupGender';
+import DashBoard from './DashBoard';
 
 const PageList = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/recomendation" element={<Recomendation />} />
-        <Route path="/chatbox" element={<ChatBox />} />
-        <Route path="/setup" element={<Setup />} />
-        <Route path="/setup/1" element={<SetGoal />} />
-        <Route path="/setup/2" element={<SetAge />} />
-        <Route path="/setup/height" element={<SetupHeight />} />
-        <Route path="/setup/gender" element={<SetupGender />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/dashboard' element={<DashBoard />} />
+        <Route path='/recomendation' element={<Recomendation />} />
+        <Route path='/chatbox' element={<ChatBox />} />
+        <Route path='/setup/0' element={<Setup />} />
+        <Route path='/setup/1' element={<SetGoal />} />
+        <Route path='/setup/2' element={<SetAge />} />
+        <Route path='/setup/3' element={<SetupHeight />} />
+        <Route path='/setup/4' element={<SetupGender />} />
       </Routes>
     </>
   );
