@@ -1,4 +1,4 @@
-import NextButton from "./NextButton";
+import NextButton from "../NextButton";
 
 const WeightInput = ({ className = "" }) => {
   return (
@@ -108,7 +108,7 @@ const WeightInput = ({ className = "" }) => {
       >
         <span>{`What’s your `}</span>
         <br />
-        <span style={{ color: "#ffcc01" }}>weight?</span>
+        <span style={{ color: "#ffcc01" }}>weight goal?</span>
       </div>
     
     <div
