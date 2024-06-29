@@ -1,7 +1,16 @@
 import Login from "./Component/Login";
 function App() {
-
-  return <><Login/></>;
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "row",
+      }}
+    >
+      <Login />
+    </div>
+  );
 }
 
 export default App;
