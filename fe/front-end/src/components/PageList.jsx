@@ -37,6 +37,7 @@ const PageList = () => {
         <Route path="/setup/6" element={<SetupDone />} />
         <Route path="/viewing" element={<View />} />
         <Route path="/characters" element={<Characters />} />
+        <Route path="/fitness" element={<FitnessDashboard />} />
       </Routes>
     </>
   );
