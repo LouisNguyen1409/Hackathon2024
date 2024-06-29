@@ -8,6 +8,7 @@ import ChatBox from "./ChatBox";
 import Setup from "./Setup";
 import SetGoal from "./SetGoal";
 import SetupHeight from "./SetupHeight";
+import SetAge from "./SetAge";
 
 const PageList = () => {
   return (
@@ -21,6 +22,7 @@ const PageList = () => {
         <Route path="/setup" element={<Setup />} />
         <Route path="/setup/1" element={<SetGoal />} />
         <Route path="/setup/height" element={<SetupHeight />} />
+        <Route path="/setup/2" element={<SetAge />} />
       </Routes>
     </>
   );
