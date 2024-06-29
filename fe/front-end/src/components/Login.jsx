@@ -1,7 +1,64 @@
-import React from 'react'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
-function Login() {
-    return <>Hello</>
+export default function Login() {
+  const [username, setUserName] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  function handleSubmit(e) {
+    console.log(username);
+    console.log(password);
+  }
+  return (
+    <Box
+      component="form"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh", // Makes the form take full viewport height
+        padding: "20px",
+        borderRadius: "8px",
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <Typography
+        style={{
+          marginBottom: "100px",
+        }}
+        variant="h1"
+        component="h2"
+      >
+        PLACEHOLDER
+      </Typography>
+      <TextField
+        style={{ margin: "20px" }}
+        id="username"
+        name="username"
+        label="Username"
+        variant="outlined"
+        onChange={(e) => setUserName(e.target.value)}
+      />
+      <TextField
+        id="password"
+        name="password"
+        type="password"
+        label="Password"
+        variant="filled"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Button
+        style={{ margin: "20px" }}
+        variant="contained"
+        onClick={() => handleSubmit()}
+      >
+        Login
+      </Button>
+    </Box>
+  );
 }
-
-export default Login;
