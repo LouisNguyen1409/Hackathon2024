@@ -16,10 +16,14 @@ const GenderIcons = ({ className = '', ionMaleOutline1, male, propGap, page_num_
     };
   }, [propGap]);
   const page_num = parseInt(page_num_str);
-
+  const handleGenderClick = (gender) => {
+    localStorage.setItem('gender', gender);
+    const page_num = parseInt(page_num_str);
+    navigate(`/setup/${page_num}`);
+  };
   return (
     <Button
-      onClick={() => navigate(`/setup/${page_num}`)}
+      onClick={() => handleGenderClick(male.toLowerCase())}
       style={{
         width: '390px',
         borderRadius: '18px',
