@@ -10,6 +10,8 @@ import SetGoal from "./SetGoal";
 import SetAge from "./SetAge";
 import DashBoard from "./DashBoard";
 import Weight from "./Weight";
+import SetupHeight from "./SetupHeight"
+import SetupGender from "./SetupGender";
 
 const PageList = () => {
   return (
@@ -26,6 +28,8 @@ const PageList = () => {
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/weight" element={<Weight />} />
 
+        <Route path="/setup/height" element={<SetupHeight />} />
+        <Route path="/setup/gender" element={<SetupGender />} />
       </Routes>
     </>
   );
