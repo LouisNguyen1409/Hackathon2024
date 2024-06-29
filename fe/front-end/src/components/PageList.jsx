@@ -13,6 +13,7 @@ import SetupHeight from './RegisterProgress/SetupHeight';
 import SetupGender from './RegisterProgress/SetupGender';
 import DashBoard from './DashBoard';
 import SetupWeight from './RegisterProgress/SetupWeight';
+import SetupDone from './RegisterProgress/SetupDone';
 
 const PageList = () => {
   return (
@@ -30,6 +31,7 @@ const PageList = () => {
         <Route path='/setup/3' element={<SetupHeight />} />
         <Route path='/setup/4' element={<SetupGender />} />
         <Route path='/setup/5' element={<SetupWeight />} />
+        <Route path='/setup/6' element={<SetupDone />} />
       </Routes>
     </>
   );
