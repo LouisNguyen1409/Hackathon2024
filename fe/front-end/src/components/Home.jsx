@@ -20,7 +20,7 @@ const Login = () => {
         letterSpacing: "normal",
       }}
     >
-      <img
+      <div
         style={{
           width: "63px",
           height: "63px",
@@ -30,7 +30,6 @@ const Login = () => {
         }}
         loading="lazy"
         alt=""
-        src="/arrow-leftcircle.svg"
       />
       <section
         style={{

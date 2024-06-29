@@ -1,76 +1,84 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { Typography } from "@mui/material";
+import LoginField from "./LoginField";
+import Logo from "./Logo";
+import { Box } from "@mui/material";
 
-export default function Register() {
-  const [username, setUserName] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [password2, setPassword2] = React.useState("");
-
-
-  function handleSubmit(e) {
-    console.log(username);
-    console.log(password);
-    console.log(password2)
-  }
+const Register = () => {
   return (
     <Box
-      component="form"
-      sx={{
+      style={{
+        width: "100%",
+        position: "relative",
+        backgroundColor: "#232323",
+        overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh", // Makes the form take full viewport height
-        padding: "20px",
-        borderRadius: "8px",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        padding: "42px 60px 182px",
+        // boxSizing: "border-box",
+        gap: "289px",
+        lineHeight: "normal",
+        letterSpacing: "normal",
       }}
-      noValidate
-      autoComplete="off"
     >
-      <Typography
+      <img
         style={{
-          marginBottom: "200px",
+          width: "63px",
+          height: "63px",
+          position: "relative",
+          overflow: "hidden",
+          flexShrink: "0",
         }}
-        variant="h1"
-        component="h2"
+        loading="lazy"
+        alt=""
+        src="/arrow-leftcircle.svg"
+      />
+      <section
+        style={{
+          alignSelf: "stretch",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          maxWidth: "100%",
+          textAlign: "center",
+          fontSize: "98px",
+          color: "#ffcc01",
+          fontFamily: "Syne",
+        }}
       >
-        PLACEHOLDER
-      </Typography>
-      <TextField
-        style={{ margin: "20px" }}
-        id="username"
-        name="username"
-        label="Username"
-        variant="outlined"
-        onChange={(e) => setUserName(e.target.value)}
-      />
-      <TextField
-        id="password"
-        name="password"
-        type="password"
-        label="Password"
-        variant="filled"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-	<TextField
-		style={{ margin: "20px" }}
-        id="password"
-        name="password"
-        type="password"
-        label="Confirm Password"
-        variant="filled"
-        onChange={(e) => setPassword2(e.target.value)}
-      />
-      <Button
-        style={{ margin: "20px" }}
-        variant="contained"
-        onClick={() => handleSubmit()}
-      >
-        Register
-      </Button>
+        <Box
+          style={{
+            width: "908px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            gap: "18px",
+            maxWidth: "100%",
+          }}
+        >
+          <h1
+            style={{
+              margin: "0",
+              alignSelf: "stretch",
+              height: "118px",
+              position: "relative",
+              fontSize: "inherit",
+              fontWeight: "800",
+              fontFamily: "inherit",
+              display: "inline-block",
+            }}
+          >
+            <span>IDO</span>
+            <span style={{ color: "#fff" }}>MOVES</span>
+          </h1>
+          <LoginField password="FALSE" type="Sign up" />
+          <Logo />
+        </Box>
+      </section>
     </Box>
   );
-}
+};
+
+export default Register;

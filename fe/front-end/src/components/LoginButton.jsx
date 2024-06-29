@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { Button } from "@mui/material";
 
-const LoginButton = ({ className = "" }) => {
+const LoginButton = ({ className = "", type }) => {
   return (
     <Box
       style={{
@@ -45,7 +45,7 @@ const LoginButton = ({ className = "" }) => {
           fontWeight: "bold"
         }}
       >
-        Log in
+        {type}
       </Button>
     </Box>
   );

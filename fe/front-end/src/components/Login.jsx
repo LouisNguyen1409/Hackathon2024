@@ -73,7 +73,7 @@ const Login = () => {
             <span>IDO</span>
             <span style={{ color: "#fff" }}>MOVES</span>
           </h1>
-          <LoginField />
+          <LoginField password="True" type="Log in" />
           <Logo />
         </Box>
       </section>

@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import LoginButton from "./LoginButton";
 
-const LoginField = ({ className = "" }) => {
+const LoginField = ({ className = "", password, type }) => {
   return (
     <Box
       style={{
@@ -135,7 +135,7 @@ const LoginField = ({ className = "" }) => {
               gap: "14px",
             }}
           >
-            <LoginButton />
+            <LoginButton type={type}/>
             <Box
               style={{
                 alignSelf: "stretch",
@@ -148,11 +148,20 @@ const LoginField = ({ className = "" }) => {
                 color: "#ffcc01",
               }}
             >
-              <Button
-                style={{ flex: "1", position: "relative", fontWeight: "500" }}
-              >
-                Forgot password?
-              </Button>
+              {password === "True" ? (
+                <Button
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    fontWeight: "500",
+                    color: "#FFCC01",
+                  }}
+                >
+                  Forgot password?
+                </Button>
+              ) : (
+                <></>
+              )}
             </Box>
           </Box>
         </Box>
