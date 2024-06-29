@@ -1,7 +1,10 @@
-import NextButton from './NextButton';
-import SetupProgress from '../components/SetupProgress';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import NextButton from '../NextButton';
+import SetupProgress from './SetupProgress';
 
-const Screen1 = ({ className = '' }) => {
+const SetAge = ({ className = '' }) => {
+  const age = 28;
   return (
     <div
       style={{
@@ -19,7 +22,7 @@ const Screen1 = ({ className = '' }) => {
         lineHeight: 'normal',
         letterSpacing: 'normal',
       }}>
-      <SetupProgress />
+      <SetupProgress pre_page='setup' page='setup' page_num_str='2' />
       <section
         style={{
           width: '955px',
@@ -28,7 +31,7 @@ const Screen1 = ({ className = '' }) => {
           alignItems: 'flex-start',
           justifyContent: 'flex-start',
           padding: '25px 0px 0px',
-					margin: '0px 15% 0px',
+          margin: '0px 15% 0px',
           boxSizing: 'border-box',
           maxWidth: '100%',
           textAlign: 'left',
@@ -103,7 +106,7 @@ const Screen1 = ({ className = '' }) => {
                     color: '#232323',
                     fontFamily: 'Inter',
                   }}>
-                  <NextButton />
+                  <NextButton page_num_str='3' />
                 </div>
               </div>
             </div>
@@ -130,8 +133,6 @@ const Screen1 = ({ className = '' }) => {
                   overflow: 'hidden',
                   zIndex: '2',
                 }}
-                loading='lazy'
-                alt=''
                 src='/frame-1.svg'
               />
             </div>
@@ -142,4 +143,4 @@ const Screen1 = ({ className = '' }) => {
   );
 };
 
-export default Screen1;
+export default SetAge;

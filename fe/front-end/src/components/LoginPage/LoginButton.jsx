@@ -1,7 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Box } from "@mui/material";
 import { Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const LoginButton = ({ className = "", type }) => {
+  const navigate = useNavigate();
   return (
     <Box
       style={{
@@ -35,6 +38,7 @@ const LoginButton = ({ className = "", type }) => {
         }}
       />
       <Button
+        onClick={() => navigate("/setup/0")}
         style={{
           height: "36px",
           flex: "1",

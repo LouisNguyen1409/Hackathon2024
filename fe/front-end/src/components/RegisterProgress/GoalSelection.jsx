@@ -2,9 +2,16 @@
 /* eslint-disable no-unused-vars */
 import { Accordion, AccordionSummary, AccordionDetails, Icon, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
-import NextButton from './NextButton';
+import NextButton from '../NextButton';
+import React from 'react';
 
 const GoalSelection = ({ className = '' }) => {
+  const [loseWeight, setloseWeight] = React.useState(false);
+  const [gainWeight, setgainWeight] = React.useState(false);
+  const [gainMuscle, setgainMuscle] = React.useState(false);
+  const [modifyDiet, setmodifyDiet] = React.useState(false);
+  const [manageStress, setmanageStress] = React.useState(false);
+
   return (
     <div
       style={{
@@ -33,6 +40,7 @@ const GoalSelection = ({ className = '' }) => {
           position: 'relative',
         }}>
         <Button
+          onClick={() => setloseWeight(!loseWeight)}
           style={{
             height: '100%',
             width: '100%',
@@ -69,6 +77,7 @@ const GoalSelection = ({ className = '' }) => {
           position: 'relative',
         }}>
         <Button
+          onClick={() => setgainWeight(!gainWeight)}
           style={{
             height: '100%',
             width: '100%',
@@ -105,6 +114,7 @@ const GoalSelection = ({ className = '' }) => {
           position: 'relative',
         }}>
         <Button
+          onClick={() => setgainMuscle(!gainMuscle)}
           style={{
             height: '100%',
             width: '100%',
@@ -141,6 +151,7 @@ const GoalSelection = ({ className = '' }) => {
           position: 'relative',
         }}>
         <Button
+          onClick={() => setmodifyDiet(!modifyDiet)}
           style={{
             height: '100%',
             width: '100%',
@@ -177,6 +188,7 @@ const GoalSelection = ({ className = '' }) => {
           position: 'relative',
         }}>
         <Button
+          onClick={() => setmanageStress(!manageStress)}
           style={{
             height: '100%',
             width: '100%',
@@ -202,7 +214,7 @@ const GoalSelection = ({ className = '' }) => {
         </div>
       </div>
 
-      <NextButton />
+      <NextButton page_num_str='2' />
     </div>
   );
 };
