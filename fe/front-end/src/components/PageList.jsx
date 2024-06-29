@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
@@ -8,26 +7,13 @@ import ChatBox from "./ChatBox";
 import Setup from "./Setup";
 import SetGoal from "./SetGoal";
 import SetAge from "./SetAge";
-import SetupHeight from "./SetupHeight"
+import SetupHeight from "./SetupHeight";
 import SetupGender from "./SetupGender";
-import FitnessDashboard from './FitnessDashboard';
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './HomePage/Home';
-import Login from './LoginPage/Login';
-import Register from './RegisterPage/Register';
-import Recomendation from './Recomendation';
-import ChatBox from './ChatBox';
-import Setup from './RegisterProgress/Setup';
-import SetGoal from './RegisterProgress/SetGoal';
-import SetAge from './RegisterProgress/SetAge';
-import SetupHeight from './RegisterProgress/SetupHeight';
-import SetupGender from './RegisterProgress/SetupGender';
-import DashBoard from './DashBoard';
-import SetupWeight from './RegisterProgress/SetupWeight';
-import SetupDone from './RegisterProgress/SetupDone';
-import View from './Viewing/View';
+import FitnessDashboard from "./FitnessDashboard";
+import DashBoard from "./DashBoard";
+import SetupWeight from "./RegisterProgress/SetupWeight";
+import SetupDone from "./RegisterProgress/SetupDone";
+import View from "./Viewing/View";
 
 const PageList = () => {
   return (
@@ -48,7 +34,7 @@ const PageList = () => {
         <Route path="/setup/3" element={<SetupHeight />} />
         <Route path="/setup/4" element={<SetupGender />} />
         <Route path="/setup/5" element={<SetupWeight />} />
-        <Route path='/setup/6' element={<SetupDone />} />
+        <Route path="/setup/6" element={<SetupDone />} />
         <Route path="/viewing" element={<View />} />
       </Routes>
     </>
