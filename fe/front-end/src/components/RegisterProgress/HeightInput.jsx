@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import NextButton from '../NextButton';
+import React from 'react';
 
 const HeightInput = ({ className = '' }) => {
+  const [height, setHeight] = React.useState(0);
   return (
     <section
       style={{
-        width: '1270px',
+        width: '100%',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
@@ -24,7 +27,7 @@ const HeightInput = ({ className = '' }) => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'flex-start',
-          gap: '100px',
+          gap: '80px',
           maxWidth: '100%',
         }}>
         <div
@@ -53,7 +56,7 @@ const HeightInput = ({ className = '' }) => {
               alignSelf: 'stretch',
               display: 'flex',
               flexDirection: 'row',
-              alignItems: 'flex-start',
+              alignItems: 'center',
               justifyContent: 'center',
               padding: '0px 20px 0px 155px',
               boxSizing: 'border-box',
@@ -69,7 +72,7 @@ const HeightInput = ({ className = '' }) => {
                 display: 'flex',
                 flexDirection: 'row',
                 flexWrap: 'wrap',
-                alignItems: 'flex-start',
+                alignItems: 'center',
                 justifyContent: 'flex-start',
                 gap: '15px',
                 maxWidth: '100%',
@@ -85,7 +88,7 @@ const HeightInput = ({ className = '' }) => {
                   style={{
                     position: 'absolute',
                     top: '3px',
-                    left: '22px',
+                    left: '0px',
                     borderRadius: '18px',
                     backgroundColor: 'rgba(255, 255, 255, 0)',
                     border: '2px solid #ffcc01',
@@ -96,7 +99,20 @@ const HeightInput = ({ className = '' }) => {
                     padding: '0 12px',
                   }}
                   placeholder='0'
+                  onChange={() => {
+                    setHeight();
+                  }}
                 />
+              </div>
+              <div>
+                <span
+                  style={{
+                    fontSize: '32px',
+                    color: 'rgba(255, 255, 255, 0.3)',
+                    fontFamily: 'Inter',
+                  }}>
+                  cm
+                </span>
               </div>
             </div>
           </div>
@@ -108,7 +124,7 @@ const HeightInput = ({ className = '' }) => {
             flexDirection: 'row',
             alignItems: 'flex-start',
             justifyContent: 'center',
-            padding: '0px 20px',
+            padding: '0px 140px 0px 170px',
             boxSizing: 'border-box',
             maxWidth: '100%',
             textAlign: 'center',

@@ -82,7 +82,7 @@ const SetupProgress = ({ className = '', page, page_num_str, pre_page }) => {
             maxWidth: '100%',
           }}>
           <Box sx={{ width: '100%' }}>
-            <BorderLinearProgress variant='determinate' value={page_num * 10} />
+            <BorderLinearProgress variant='determinate' value={(page_num / 6) * 100} />
           </Box>
         </Box>
         <Box

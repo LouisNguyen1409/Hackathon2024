@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
-import GenderIcons from '../components/GenderIcons';
-import NextButton from './NextButton';
-import SetupProgress from './RegisterProgress/SetupProgress';
+import GenderIcons from './GenderIcons';
+import SetupProgress from './SetupProgress';
 
 const SetupGender = () => {
   return (
@@ -15,13 +14,13 @@ const SetupGender = () => {
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
-        padding: '43px 60px 78px',
+        padding: '43px 60px 73px',
         boxSizing: 'border-box',
         gap: '116px',
         lineHeight: 'normal',
         letterSpacing: 'normal',
       }}>
-      <SetupProgress />
+      <SetupProgress pre_page='setup' page='setup' page_num_str='4' />
       <section
         style={{
           alignSelf: 'stretch',
@@ -78,36 +77,9 @@ const SetupGender = () => {
                 maxWidth: '100%',
                 gap: '20px',
               }}>
-              <GenderIcons ionMaleOutline1='/ionmaleoutline-1.svg' male='Male' />
-              <GenderIcons ionMaleOutline1='/ionfemaleoutline-1.svg' male='Female' />
+              <GenderIcons ionMaleOutline1='/ionmaleoutline-1.svg' male='Male' page_num_str='5' />
+              <GenderIcons ionMaleOutline1='/ionfemaleoutline-1.svg' male='Female' page_num_str='5' />
             </Box>
-          </Box>
-          <Box
-            style={{
-              alignSelf: 'stretch',
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'flex-start',
-              justifyContent: 'center',
-              padding: '0px 20px 0px 22px',
-              textAlign: 'center',
-              fontSize: '32px',
-              color: '#232323',
-              fontFamily: 'Inter',
-              marginRight: '120px',
-            }}>
-            <Box
-              style={{
-                width: '152px',
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'flex-start',
-                justifyContent: 'flex-start',
-                padding: '2px 26px 31px',
-                boxSizing: 'border-box',
-                position: 'relative',
-              }}></Box>
-            <NextButton />
           </Box>
         </Box>
       </section>

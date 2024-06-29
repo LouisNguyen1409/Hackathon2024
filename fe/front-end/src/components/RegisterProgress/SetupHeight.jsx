@@ -15,7 +15,7 @@ const SetupHeight = () => {
         justifyContent: 'flex-start',
         padding: '43px 60px 73px',
         boxSizing: 'border-box',
-        gap: '225px',
+        gap: '175px',
         lineHeight: 'normal',
         letterSpacing: 'normal',
       }}>
