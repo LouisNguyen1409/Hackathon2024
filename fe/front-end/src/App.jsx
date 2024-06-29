@@ -1,4 +1,4 @@
-import Login from "./Component/Login";
+import Login from "./components/Login";
 function App() {
 
   return <><Login/></>;
