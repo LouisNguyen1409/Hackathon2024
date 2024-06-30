@@ -1,6 +1,8 @@
 import { Box } from '@mui/material';
 import HomeButton from './HomeButton';
 import Typography from '@mui/material/Typography';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/800.css"; // Specify weight
 
 const Login = () => {
   return (

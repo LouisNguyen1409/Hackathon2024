@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 import NextButton from '../NextButton';
 import React from 'react';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 const HeightInput = ({ className = '' }) => {
   const [height, setHeight] = React.useState(0);

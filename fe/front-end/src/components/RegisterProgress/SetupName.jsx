@@ -2,6 +2,8 @@
 import { Box } from '@mui/material';
 import NextButton from '../NextButton';
 import React from 'react';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 // eslint-disable-next-line react/prop-types
 const SetupName = ({ className = '' }) => {

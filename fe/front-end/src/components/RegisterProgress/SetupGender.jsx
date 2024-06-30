@@ -1,6 +1,8 @@
 import { Box } from '@mui/material';
 import GenderIcons from './GenderIcons';
 import SetupProgress from './SetupProgress';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 const SetupGender = () => {
   const handleGenderClick = (gender) => {

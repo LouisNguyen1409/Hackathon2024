@@ -2,6 +2,8 @@ import LoginField from './LoginField';
 import Logo from './Logo';
 import { Box, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/800.css"; // Specify weight
 
 const Login = () => {
   const navigate = useNavigate();

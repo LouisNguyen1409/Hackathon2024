@@ -1,5 +1,7 @@
 import GoalSelection from './GoalSelection';
 import SetupProgress from './SetupProgress';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 
 const SetGoal = () => {

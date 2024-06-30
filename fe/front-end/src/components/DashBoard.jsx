@@ -3,6 +3,8 @@ import React from "react";
 import FrameComponent1 from "../components/DashBoard/FrameComponent1";
 import ProgressTop from "../components/DashBoard/ProgressTop";
 import FrameComponent from "../components/DashBoard/FrameComponent";
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/800.css"; // Specify weight
 
 const DashBoard = () => {
   return (

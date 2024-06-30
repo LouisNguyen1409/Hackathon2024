@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 import NextButton from '../NextButton';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
+
 
 const WeightInput = ({ className = '' }) => {
   return (

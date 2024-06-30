@@ -77,14 +77,17 @@ const MessageContainer = styled('div')({
 
 const Message = styled('div')(({ isUser }) => ({
   alignSelf: isUser ? 'flex-end' : 'flex-start',
-  backgroundColor: isUser ? '#007bff' : '#f1f0f0',
-  color: isUser ? '#fff' : '#000',
+  backgroundColor: isUser ? 'black' : '#333',
+  color: isUser ? '#fff' : 'white',
   padding: '10px',
   marginLeft: isUser ? "0px" : '10px',
   marginRight: isUser ? "20px" : '0px',
-  borderRadius: '4px',
+  borderRadius: '18px',
   maxWidth: '100%',
   wordBreak: 'break-word',
+
+  border: isUser ? '2px solid white' : '2px solid black',
+  boxSizing: 'border-box',
 }));
 
 function ChatBoxInput() {

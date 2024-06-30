@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 import NextButton from '../NextButton';
 import SetupProgress from './SetupProgress';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 const SetAge = ({ className = '' }) => {
   const age = 28;
