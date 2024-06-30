@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
-
+import { useNavigate } from "react-router-dom";
+import React from "react";
 const ProgressTop = ({ className = "" }) => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/characters");
+  };
+
   return (
     <div
       style={{
@@ -472,6 +479,7 @@ const ProgressTop = ({ className = "" }) => {
               maxWidth: "100%",
               zIndex: "1",
             }}
+            onClick={handleGetStartedClick}
           >
             <div
               style={{
