@@ -1,6 +1,9 @@
+import { Button } from "@mui/material";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 const FrameComponent = ({ className = "" }) => {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -72,7 +75,8 @@ const FrameComponent = ({ className = "" }) => {
         <div
           style={{ alignSelf: "stretch", height: "96px", position: "relative" }}
         >
-          <div
+          <Button
+          onClick={() => navigate("/chatbox")}
             style={{
               position: "absolute",
               height: "100%",

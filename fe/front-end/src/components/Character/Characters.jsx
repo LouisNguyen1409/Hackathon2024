@@ -21,7 +21,7 @@ const CharacterBox = ({ name, image, maxHeight, id, visible, handleClick }) => {
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        filter: `grayscale(${grey}%)`
+        filter: `grayscale(${grey}%)`,
       }}
       onClick={() => handleClick(id)}
     >
@@ -107,12 +107,30 @@ const Characters = () => {
             justifyContent: "center",
           }}
         >
-          <CharacterBox image="/gojo.png" maxHeight="100%" handleClick={handleClick} id="1" visible={visible}/>
-          <CharacterBox image="/dva.png" maxHeight="100%" handleClick={handleClick} id="2" visible={visible} />
-          <CharacterBox image="/add.png" maxHeight="30%" handleClick={handleClick} id="3" visible={visible}/>
+          <CharacterBox
+            image="/gojo.png"
+            maxHeight="100%"
+            handleClick={handleClick}
+            id="1"
+            visible={visible}
+          />
+          <CharacterBox
+            image="/dva.png"
+            maxHeight="100%"
+            handleClick={handleClick}
+            id="2"
+            visible={visible}
+          />
+          <CharacterBox
+            image="/add.png"
+            maxHeight="30%"
+            handleClick={handleClick}
+            id="3"
+            visible={visible}
+          />
         </Box>
 
-        <NextButton />
+        <NextButton next_page="fitness" page_num_str="chohuy" />
       </Box>
     </>
   );
