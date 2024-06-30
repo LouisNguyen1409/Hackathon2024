@@ -1,6 +1,8 @@
 import { Button } from '@mui/material';
 import Done2 from './DoneText';
 import { useNavigate } from 'react-router-dom';
+import "@fontsource/syne"; // Defaults to weight 400
+import "@fontsource/syne/700.css"; // Specify weight
 
 const SetUpDone = () => {
   const navigate = useNavigate();
@@ -21,6 +23,8 @@ const SetUpDone = () => {
         gap: '200px',
         lineHeight: 'normal',
         letterSpacing: 'normal',
+        fontFamily: 'Syne',
+
       }}>
       <Button onClick={() => navigate('/setup/5')}>
         <img
