@@ -2,23 +2,28 @@ import React from "react";
 import NextButton from "../NextButton";
 import { Box, Button } from "@mui/material";
 
-const CharacterBox = ({ name, image, maxHeight , id, visible}) => {
+const CharacterBox = ({ name, image, maxHeight, id, visible, handleClick }) => {
+  const chosen = id === visible || visible === "0";
 
+  const border = chosen ? "#FFCC01" : "#D9D9D9";
+  const grey = chosen ? "0" : "100";
 
   return (
     <Button
       style={{
         width: "230px",
         height: "250px",
-        border: "2px solid #FFCC01",
+        border: `2px solid ${border}`,
         margin: "0 30px",
         textAlign: "center",
         borderRadius: "10px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        overflow: "hidden"
+        overflow: "hidden",
+        filter: `grayscale(${grey}%)`
       }}
+      onClick={() => handleClick(id)}
     >
       <img
         src={image}
@@ -34,11 +39,11 @@ const CharacterBox = ({ name, image, maxHeight , id, visible}) => {
 };
 
 const Characters = () => {
-	const [visible, setVisible]= React.useState(0);
+  const [visible, setVisible] = React.useState("0");
 
-	function handleClick(i) {
-		setVisible(i)
-	}
+  function handleClick(i) {
+    setVisible(i);
+  }
 
   return (
     <>
@@ -102,9 +107,9 @@ const Characters = () => {
             justifyContent: "center",
           }}
         >
-          <CharacterBox image="/gojo.png" maxHeight="100%" />
-          <CharacterBox image="/dva.png" maxHeight="100%" />
-          <CharacterBox image="/add.png" maxHeight="30%" />
+          <CharacterBox image="/gojo.png" maxHeight="100%" handleClick={handleClick} id="1" visible={visible}/>
+          <CharacterBox image="/dva.png" maxHeight="100%" handleClick={handleClick} id="2" visible={visible} />
+          <CharacterBox image="/add.png" maxHeight="30%" handleClick={handleClick} id="3" visible={visible}/>
         </Box>
 
         <NextButton />

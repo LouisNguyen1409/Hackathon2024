@@ -10,7 +10,7 @@ const Sidebar = styled(Box)(({ theme }) => ({
   display: 'flex',
 //   backgroundColor: '#232323',
   color: '#fff',
-  width: '25%',
+  width: '38%',
   textAlign: 'center',
 }));
 
@@ -148,7 +148,7 @@ const FitnessDashboard = () => {
   return (
     <Dashboard>
       <Sidebar>
-        <CharacterImage src="/gojo_satoru.png" alt="Character" />
+        <img src="/gojo_satoru.png"  alt='gojo' style={{maxWidth: "100%"}}/>
         <ProgressPercentage>36%</ProgressPercentage>
         <ProgressText1>Overall</ProgressText1>
         <ProgressText2>Progress</ProgressText2>
@@ -172,8 +172,8 @@ const FitnessDashboard = () => {
               alt="Squats"
             />
             <CardContent>
-              <ExerciseText1 variant="h6" sx = {('top : 43%')}>Squats</ExerciseText1>
-              <ExerciseText2 sx = {('top : 52%')}>3 sets of 15</ExerciseText2>
+              <ExerciseText1 style={{margin:"0 4rem"}} variant="h6" sx = {('top : 43%')}>Squats</ExerciseText1>
+              <ExerciseText2 style={{margin:"0 4rem"}} sx = {('top : 52%')}>3 sets of 15</ExerciseText2>
             </CardContent>
           </ExerciseCard>
           <ExerciseCard>
@@ -183,8 +183,8 @@ const FitnessDashboard = () => {
               alt="Stretches"
             />
             <CardContent>
-              <ExerciseText1 variant="h6" sx = {('top : 69%')}>Stretches</ExerciseText1>
-              <ExerciseText2 sx = {('top : 78%')}>4 sets of 15s</ExerciseText2>
+              <ExerciseText1 style={{margin:"0 4rem"}} variant="h6" sx = {('top : 69%')}>Stretches</ExerciseText1>
+              <ExerciseText2 style={{margin:"0 4rem"}} sx = {('top : 78%')}>4 sets of 15s</ExerciseText2>
             </CardContent>
           </ExerciseCard>
           <ExerciseCard>
@@ -194,8 +194,8 @@ const FitnessDashboard = () => {
               alt="New Exercise"
             />
             <CardContent>
-              <ExerciseText1 variant="h6" sx = {('top : 95%')}>New Exercise</ExerciseText1>
-              <ExerciseText2 sx = {('top : 104%')}>3 sets of 20</ExerciseText2>
+              <ExerciseText1 style={{margin:"0 4rem"}} variant="h6" sx = {('top : 95%')}>Crunches</ExerciseText1>
+              <ExerciseText2 style={{margin:"0 4rem"}} sx = {('top : 104%')}>3 sets of 20</ExerciseText2>
             </CardContent>
           </ExerciseCard>
           {/* Add more exercises as needed */}
