@@ -86,7 +86,7 @@ const Sidebar = () => {
     >
       <Button
         sx={{ top: "2rem", left: "2rem", position: "relative" }}
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/dashboard")}
       >
         <img
           style={{

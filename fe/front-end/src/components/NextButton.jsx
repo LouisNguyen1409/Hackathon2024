@@ -1,11 +1,16 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Box, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const NextButton = ({ page_num_str }) => {
+const NextButton = ({ page_num_str, next_page }) => {
   const navigate = useNavigate();
+  const handleClick = () => {
+      if (page_num_str === "chohuy") {
+        navigate(`/${next_page}`);
+      } else {
+        navigate(`/setup/${page_num}`);
+      }
+  }
   const page_num = parseInt(page_num_str);
   return (
     <Box
@@ -35,7 +40,7 @@ const NextButton = ({ page_num_str }) => {
           position: 'relative',
         }}>
         <Button
-          onClick={() => navigate(`/setup/${page_num}`)}
+          onClick={() => handleClick()}
           style={{
             height: '200%',
             width: '100%',
